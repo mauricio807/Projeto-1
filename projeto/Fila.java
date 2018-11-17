@@ -55,10 +55,13 @@ public class Fila implements Queue {
         if (isFull()) {
             throw new RuntimeException("Fila cheia!");
         }
-        System.out.println("Adicionar: ");
+        System.out.println("Insira a prioridade: "
+                + "\n 1 - Idoso / Gestante / Deficiente"
+                + "\n 2 - Aluno"
+                + "\n 3 - Visitante / Professor");
         f = input.nextInt();
         fila[last] = (int) f;
-        last = (last + 1);
+        last = last + 1;
         size++;
     }
 
