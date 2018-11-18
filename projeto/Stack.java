@@ -1,7 +1,9 @@
 package projeto;
 
 public interface Stack {
-
+    
+    //Metodos a serem implementados na classe PilhaProcessos
+    
     public int size();
 
     public boolean isEmpty();
