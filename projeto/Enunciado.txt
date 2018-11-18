@@ -1,0 +1,14 @@
+          Esse projeto tem como objetivo criar um sistema de atendimento 
+     baseado no que já é utilizado na Unieuro, usando os conceitos 
+     de recursividade e estrutura de dados. 
+     
+          Sendo assim, nesse sistema é possível adicionar, excluir e 
+     analisar um processo na pilha de processos de acordo com sua 
+     prioridade, também será possível adicionar, atender e excluir 
+     uma pessoa da fila de atendimento de acordo com sua prioridade. 
+
+          Esse sistema foi construído utilizando duas classes, Fila e 
+     PilhaProcessos, também foi utilizado duas interfaces, Stack e 
+     Queue. A classe Fila e a interface Queue fora feitas por 
+     Lucas Francelino, já a classe PilhaProcesso e a interface Stack 
+     foram feitas por Ferdinando Garcia. 
