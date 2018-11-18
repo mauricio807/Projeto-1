@@ -4,35 +4,35 @@ import java.util.Scanner;
 
 public class Fila implements Queue {
 
-    int fila[];
-    int first;
-    int last;
-    int size;
+    int fila[];  //Variavel para o Arrey da fila
+    int first;  //Variavel para receber o primeiro da fila
+    int last;  //Variavel para receber o ultimo da fila
+    int size;  //Variavel para receber o tamanho total de pessoas na fila
 
     Scanner input = new Scanner(System.in);
 
-    public Fila() {
+    public Fila() {  //Contrutor da classe Fila
         fila = new int[15];
         size = first = last = 0;
     }
 
     @Override
-    public int size() {
+    public int size() {  //Metodo para verificar o número de pessoas na fila
         return size;
     }
 
     @Override
-    public boolean isEmpty() {
+    public boolean isEmpty() {  //Metodo para verificar se a posição na fila está vazia
         return (size == 0);
     }
 
     @Override
-    public boolean isFull() {
+    public boolean isFull() {  //Metodo para verificar se a posição na fila está ocupado
         return (size == 14);
     }
 
     @Override
-    public Object peek() {
+    public Object peek() {  //Metodo para retornar o primeiro na fila
         if (isEmpty()) {
             throw new RuntimeException("Fila vazia!");
         }
@@ -40,7 +40,7 @@ public class Fila implements Queue {
     }
 
     @Override
-    public Object remove() {
+    public Object remove() {  //Metodo para remover o primeiro da fila
         if (isEmpty()) {
             throw new RuntimeException("Fila vazia!");
         }
@@ -51,7 +51,7 @@ public class Fila implements Queue {
     }
 
     @Override
-    public void add(Object f) {
+    public void add(Object f) {  //Metodo para adicionar pessoa ao final da fila
         if (isFull()) {
             throw new RuntimeException("Fila cheia!");
         }
