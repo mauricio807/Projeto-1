@@ -1,7 +1,9 @@
 package projeto;
 
 public interface Queue {
-
+    
+    //Metodos a serem implementados na classe Fila
+    
     public int size();
 
     public boolean isEmpty();
