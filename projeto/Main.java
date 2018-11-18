@@ -44,7 +44,7 @@ public class Main {
                     }
 
                     if (opcaoo == 3) {
-                        System.out.println("Atendido! " + f.remove());
+                        System.out.println(f.remove() + "foi atendido!");
                         System.out.println("   ");
                     }
 
@@ -78,7 +78,7 @@ public class Main {
                     }
 
                     if (opcao == 3) {
-                        System.out.println("Exluir processo: " + pp.pop());
+                        System.out.println("O processo" + pp.pop() + "foi analisado!");
                         System.out.println("  ");
                     }
 
