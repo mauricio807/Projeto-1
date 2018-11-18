@@ -8,20 +8,22 @@ public class Main {
 
         PilhaProcessos pp = new PilhaProcessos();
         Fila f = new Fila();
+        
         Scanner input = new Scanner(System.in);
+        
         int opcao;
         int opcaoo;
         int escolha;
 
         do {
             System.out.println("1 - Fila");
-            System.out.println("2 - Pilha de processos");
+            System.out.println("2 - Pilha de Processos");
             System.out.println("   ");
             System.out.println("Digite a opção: ");
             escolha = input.nextInt();
             System.out.println("   ");
 
-            if (escolha == 1) {
+            if (escolha == 1) {  //Opção para manipular a fila
                 do {
                     System.out.println("1 - Verificar Fila");
                     System.out.println("2 - Chamar o Primeiro da Fila");
@@ -54,7 +56,7 @@ public class Main {
                 } while (opcaoo != 4);
             }
 
-            if (escolha == 2) {
+            if (escolha == 2) {  //Opção para manipular a pilha de processos
                 do {
                     System.out.println("1 - Analisar Processo");
                     System.out.println("2 - Adicionar Processo");
@@ -84,6 +86,7 @@ public class Main {
                         System.out.println("Quantidade de processos: " + pp.size());
                         System.out.println("  ");
                     }
+                    
                 } while (opcao != 4);
 
             }
